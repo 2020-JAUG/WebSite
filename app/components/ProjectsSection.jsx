@@ -7,7 +7,8 @@ const projectsData = [
         id: 1,
         title: 'Project 1',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://picsum.photos/id/300/200/300',
+        //imageUrl: 'https://picsum.photos/id/300/200/300',
+        imageUrl: '/images/projects/buceo.png',
         tag: ['All', 'Web'],
         gitUrl: '/',
         previewUrl: '/'
