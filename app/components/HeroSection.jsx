@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import {TypeAnimation} from 'react-type-animation';
+import { TypeAnimation } from 'react-type-animation';
 
 
 export const HeroSection = () => {
@@ -16,7 +16,7 @@ export const HeroSection = () => {
                             Hello, I'm{' '}
                         </span>
                         <br></br>
-                        <span style={{whiteSpace: 'nowrap'}}>
+                        <span style={{ whiteSpace: 'nowrap' }}>
                             <TypeAnimation
                                 sequence={[
                                     'Alejandro',
@@ -44,7 +44,7 @@ export const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link href="/"
-                              className='px-1 py-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-green-500
+                            className='px-1 py-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-green-500
                         to-secundary-blue-700 hover:bg-slate-800 text-white mt-3'
 
                         >
@@ -54,12 +54,12 @@ export const HeroSection = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='col-span-5 place-self-center mt-2 lg:mt-0' style={{marginLeft: 'auto'}}>
-                    <div className='rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
+                <div className='col-span-5 place-self-center mt-2 lg:mt-0 flex justify-center'>
+                    <div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
                         <Image
-                            src=''
+                            src='/images/projects/astroLuna.jpeg'
                             alt='hero image'
-                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2'
+                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
                             width={300}
                             height={300}
                         />
