@@ -1,5 +1,7 @@
+'use client'
 import React from 'react'
 import ProjectCard from './ProjectCard'
+import ProjectTag from './ProjectTag'
 
 
 const projectsData = [
@@ -54,7 +56,7 @@ const projectsData = [
         title: 'Project 6',
         description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
         imageUrl: 'https://picsum.photos/id/3/200/300',
-        tag: ['All', 'Web'],
+        tag: ['All', 'Mobile'],
         gitUrl: '/',
         previewUrl: '/'
     }
@@ -62,14 +64,28 @@ const projectsData = [
 
 const ProjectsSection = () => {
 
+    const [selectedTag, setSelectedTag] = React.useState('All');
+
+    const handleTagClick = (tag) => {
+        setSelectedTag(tag);
+    }
+
+    const filteredProjects = projectsData.filter((project) => {
+        if (selectedTag === 'All') {
+            return true;
+        }
+        return project.tag.includes(selectedTag);
+    });
+
     return (
         <><h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-                <button>All</button>
-                <button>Web</button>
+                <ProjectTag tag='All' onClick={() => handleTagClick('All')} isSelected={selectedTag === 'All'} />
+                <ProjectTag tag='Web' onClick={() => handleTagClick('Web')} isSelected={selectedTag === 'Web'} />
+                <ProjectTag tag='Mobile' onClick={() => handleTagClick('Mobile')} isSelected={selectedTag === 'Mobile'} />
             </div>
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
-                {projectsData.map((project) => (
+                {filteredProjects.map((project) => (
                     <ProjectCard
                         key={project.id}
                         title={project.title}
