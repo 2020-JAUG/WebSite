@@ -34,3 +34,6 @@
 //         return NextResponse.json({ error });
 //     }
 // };
+export function dummyFunction() {
+    console.log('This is a dummy function');
+}
