@@ -10,14 +10,14 @@ const TAB_DATA = [
         id: 'skills',
         content: (
             <ul className='list-disc pl-2'>
-                <li>JavaScript</li>
-                <li>PHP</li>
-                <li>MySQL</li>
-                <li>React</li>
-                <li>NodeJS</li>
-                <li>TypeORM</li>
-                <li>Laravel</li>
                 <li>Docker</li>
+                <li>JavaScript</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>NodeJS</li>
+                <li>PHP</li>
+                <li>React</li>
+                <li>TypeORM</li>
             </ul>
         )
     },
@@ -26,9 +26,9 @@ const TAB_DATA = [
         id: 'certifications',
         content: (
             <ul className='list-disc pl-2'>
-                <li>TypeScript Udemy</li>
                 <li>Docker Udemy</li>
                 <li>Object oriented programming in Php Platzi</li>
+                <li>TypeScript Udemy</li>
             </ul>
         )
     },
@@ -37,8 +37,8 @@ const TAB_DATA = [
         id: 'education',
         content: (
             <ul className='list-disc pl-2'>
-                <li>DAW Misericordia</li>
                 <li>Bootmcamp FullStack</li>
+                <li>DAW Misericordia</li>
             </ul>
         )
     }
@@ -65,7 +65,7 @@ const AboutSection = () => {
                     <p className='text-base lg:text-lg'>
                         Hi, I'm Alejo. I've always been very curious about the digital world, I've been self-taught and I've been acquiring knowledge about programming.
                         My story is a bit different, I've been working in the hospitality industry for more than 10 years. As you can imagine, a very demanding sector where you work hard and learn every day as in software development.
-                        I have experience working with: JavaScript, PHP, HTML, MySQL, React, NodeJS, TypeORM, Laravel, Docker. I am a fast learner and always looking to expand my knowledge and skills.
+                        I have experience working with: Docker, HTML, JavaScript, Laravel, MySQL, NodeJS, PHP, React, TypeORM. I am a fast learner and always looking to expand my knowledge and skills.
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
                         <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
