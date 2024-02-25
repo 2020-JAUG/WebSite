@@ -2,7 +2,7 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import { TypeAnimation } from 'react-type-animation';
+import {TypeAnimation} from 'react-type-animation';
 
 
 const HeroSection = () => {
@@ -16,7 +16,7 @@ const HeroSection = () => {
                             Hello, I'm{' '}
                         </span>
                         <br></br>
-                        <span style={{ whiteSpace: 'nowrap' }}>
+                        <span style={{whiteSpace: 'nowrap', maxWidth: '100%', minWidth: '10rem'}}>
                             <TypeAnimation
                                 sequence={[
                                     'Alejandro',
@@ -32,11 +32,13 @@ const HeroSection = () => {
                     </h1>
                     <p className='text-base sm:text-lg mb-6 lg:text-xl [#adb7eb]
                     '>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.
+                        I'm passionate about crafting innovative solutions to enhance user experience and tackle complex
+                        challenges. With a focus on web development and modern technologies, I strive to build scalable,
+                        high-performance applications. Committed to code quality and continuous learning, I stay updated
+                        in this dynamic field.
                     </p>
                     <div>
-                        <Link href='/contact' className='px-6 py-3 w-full sm:w-fit rounded-full mr-4
+                        <Link href='/#contact' className='px-6 py-3 w-full sm:w-fit rounded-full mr-4
                         bg-gradient-to-br from-green-500 to-blue-700
                         hover:bg-slate-200 text-white
                         from-primary-500 to-secondary-500
@@ -44,7 +46,7 @@ const HeroSection = () => {
                             Hire Me
                         </Link>
                         <Link href="/"
-                            className='px-1 py-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-green-500
+                              className='px-1 py-1 inline-block  w-full sm:w-fit rounded-full bg-gradient-to-br from-primary-green-500
                         to-secundary-blue-700 hover:bg-slate-800 text-white mt-3'
 
                         >
@@ -62,6 +64,7 @@ const HeroSection = () => {
                             className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
                             width={300}
                             height={300}
+                            Loading='eager'
                         />
                     </div>
                 </div>
