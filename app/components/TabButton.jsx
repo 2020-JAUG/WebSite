@@ -6,7 +6,7 @@ const variants = {
     active: { width: 'calc(100% - 0.75rem)' }
 };
 
-export const TabButton = ({ active, selectTab, children, arialLabel }) => {
+export const TabButton = ({ active, selectTab, children, ariaLabel }) => {
 
     const buttonClass = active ? 'text-white' : 'text-[#adb7be]'
 
