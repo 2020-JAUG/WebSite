@@ -8,11 +8,11 @@ const projectsData = [
     {
         id: 1,
         title: 'Project 1',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
+        description: 'Simple project to learn how to make calls to a movie api and create a simple platform for movie rentals.',
         //imageUrl: 'https://picsum.photos/id/300/200/300',
-        imageUrl: '/images/projects/buceo.png',
+        imageUrl: '/images/projects/movie.png',
         tag: ['All', 'Web'],
-        gitUrl: '/',
+        gitUrl: 'https://github.com/2020-JAUG/Front_rental_movie',
         previewUrl: '/'
     },
     {
@@ -78,7 +78,8 @@ const ProjectsSection = () => {
     });
 
     return (
-        <><h2 className='text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12'>My Projects</h2>
+        <section id='projects'>
+            <h2 className='text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12'>My Projects</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
                 <ProjectTag tag='All' onClick={() => handleTagClick('All')} isSelected={selectedTag === 'All'} />
                 <ProjectTag tag='Web' onClick={() => handleTagClick('Web')} isSelected={selectedTag === 'Web'} />
@@ -97,7 +98,7 @@ const ProjectsSection = () => {
                     />
                 ))}
             </div>
-        </>
+        </section>
     )
 }
 
