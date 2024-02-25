@@ -63,10 +63,10 @@ const EmailSection = () => {
                     try my best to get back to you!
                 </p>
                 <div className='socials flex flex-row gap-2'>
-                    <Link href='github.com'>
+                    <Link href='https://github.com/2020-JAUG' target='_blank'>
                         <Image src={GithubIcon} alt='Github Icon' />
                     </Link>
-                    <Link href='linkedin.com'>
+                    <Link href='https://www.linkedin.com/in/alejandrourbinagonzalez/' target='_blank'>
                         <Image src={LinkedinIcon} alt='Linkedin Icon' />
                     </Link>
                 </div>
@@ -124,12 +124,12 @@ const EmailSection = () => {
                                 placeholder="Let' s talk about..."
                             />
                         </div>
-                        <button
+                        {/*<button
                             type='submit'
                             className='bg-gradient-to-br from-green-500 to-blue-700 text-white font-medium py-2.5 px-5 rounded-lg w-full'
                         >
                             Send Message
-                        </button>
+                        </button>*/}
                         {
                             emailSubmitted && (
                                 <p className='text-green-500 text-sm mt-2'>
