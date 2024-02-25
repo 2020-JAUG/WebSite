@@ -6,12 +6,12 @@ const variants = {
     active: { width: 'calc(100% - 0.75rem)' }
 };
 
-export const TabButton = ({ active, selectTab, children }) => {
+export const TabButton = ({ active, selectTab, children, arialLabel }) => {
 
     const buttonClass = active ? 'text-white' : 'text-[#adb7be]'
 
     return (
-        <button onClick={selectTab}>
+        <button onClick={selectTab} aria-label={ariaLabel}>
             <p className={`mr-3 font-semibold hover:text-white ${buttonClass}`}>
                 {children}
             </p>

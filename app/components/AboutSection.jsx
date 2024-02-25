@@ -68,15 +68,15 @@ const AboutSection = () => {
                         I have experience working with: Docker, HTML, JavaScript, Laravel, MySQL, NodeJS, PHP, React, TypeORM. I am a fast learner and always looking to expand my knowledge and skills.
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
-                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
+                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"} ariaLabel='Select skills'>
                             {" "}
                             Skills{" "}
                         </TabButton>
-                        <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>
+                        <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'} ariaLabel='Select certifications'>
                             {" "}
                             Certifications{" "}
                         </TabButton>
-                        <TabButton selectTab={() => handleTabChange('education')} active={tab === 'education'}>
+                        <TabButton selectTab={() => handleTabChange('education')} active={tab === 'education'} ariaLabel='Select education'>
                             {" "}
                             Education{" "}
                         </TabButton>
