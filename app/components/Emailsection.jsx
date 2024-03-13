@@ -1,5 +1,5 @@
-'use client';
-import React, { useState } from 'react';
+"use client";
+import React, {useState} from 'react';
 import GithubIcon from '../../public/github-icon.svg';
 import LinkedinIcon from '../../public/linkedin-icon.svg';
 import Link from 'next/link';
@@ -19,6 +19,7 @@ const EmailSection = () => {
         };
         const JSONdata = JSON.stringify(data);
 
+        console.log('data ', JSONdata)
         const endpoint = '/api/send';
 
         // Form the request for sending data to the server.
@@ -35,9 +36,11 @@ const EmailSection = () => {
 
         // Send the request to the server.
         const response = await fetch(endpoint, options);
+        console.log('response ', response);
         // Get the response from the server.
         const responseData = await response.json();
 
+        console.log('response ', responseData, ' otro => ', response);
         // If the response is successful, set emailSubmitted to true.
         if (response.status === 200) {
             console.log("Message sent.");
@@ -51,7 +54,8 @@ const EmailSection = () => {
             id='contact'
             className='grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative'
         >
-            <div className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
+            <div
+                className='bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-primary-900 to-transparent rounded-full h-80 w-80 z-0 blur-lg absolute top-3/4 -left-4 transform -translate-x-1/2 -translate-1/2'></div>
             <div className='z-10'>
                 <h5 className='text-xl font-bold text-white my-2'>
                     Let&apos;s Connect
@@ -64,10 +68,10 @@ const EmailSection = () => {
                 </p>
                 <div className='socials flex flex-row gap-2'>
                     <Link href='https://github.com/2020-JAUG' target='_blank'>
-                        <Image src={GithubIcon} alt='Github Icon' />
+                        <Image src={GithubIcon} alt='Github Icon'/>
                     </Link>
                     <Link href='https://www.linkedin.com/in/alejandrourbinagonzalez/' target='_blank'>
-                        <Image src={LinkedinIcon} alt='Linkedin Icon' />
+                        <Image src={LinkedinIcon} alt='Linkedin Icon'/>
                     </Link>
                 </div>
             </div>
@@ -124,12 +128,12 @@ const EmailSection = () => {
                                 placeholder="Let' s talk about..."
                             />
                         </div>
-                        {/*<button
+                        {<button
                             type='submit'
                             className='bg-gradient-to-br from-green-500 to-blue-700 text-white font-medium py-2.5 px-5 rounded-lg w-full'
                         >
                             Send Message
-                        </button>*/}
+                        </button>}
                         {
                             emailSubmitted && (
                                 <p className='text-green-500 text-sm mt-2'>
