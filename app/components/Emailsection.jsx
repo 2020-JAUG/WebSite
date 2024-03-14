@@ -19,7 +19,7 @@ const EmailSection = () => {
         };
         const JSONdata = JSON.stringify(data);
 
-        console.log('data ', JSONdata)
+        console.log('who send? ', JSONdata)
         const endpoint = '/api/send';
 
         // Form the request for sending data to the server.
