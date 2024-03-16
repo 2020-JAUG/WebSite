@@ -7,57 +7,38 @@ import ProjectTag from './ProjectTag'
 const projectsData = [
     {
         id: 1,
-        title: 'Project 1',
-        description: 'Simple project to learn how to make calls to a movie api and create a simple platform for movie rentals.',
-        //imageUrl: 'https://picsum.photos/id/300/200/300',
-        imageUrl: '/images/projects/movie.png',
+        title: 'Create a simple image of Nodejs && TypeScript.',
+        //description: 'Create a simple image of Nodejs && TypeScript.',
+        imageUrl: '/images/projects/docker.png',
         tag: ['All', 'Web'],
-        gitUrl: 'https://github.com/2020-JAUG/Front_rental_movie',
+        gitUrl: 'https://github.com/2020-JAUG/Docker-image',
         previewUrl: '/'
     },
     {
         id: 2,
-        title: 'Project 2',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://picsum.photos/id/202/200/300',
+        title: 'Using the repository pattern in Laravel.',
+        //description: 'Using the repository pattern in Laravel.',
+        imageUrl: '/images/projects/patterns.png',
         tag: ['All', 'Web'],
-        gitUrl: '/',
+        gitUrl: 'https://github.com/2020-JAUG/TestLaravelRepository/tree/main',
         previewUrl: '/'
     },
     {
         id: 3,
-        title: 'Project 3',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://picsum.photos/id/35/200/300',
-        tag: ['All', 'Web'],
-        gitUrl: '/',
+        title: 'This repository is for learning more about relationships in Laravel.',
+        //description: 'This repository is for learning more about relationships in Laravel.',
+        imageUrl: '/images/projects/ER.png',
+        tag: ['All', 'Mobile'],
+        gitUrl: 'https://github.com/2020-JAUG/Relationships',
         previewUrl: '/'
     },
     {
         id: 4,
-        title: 'Project 4',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://picsum.photos/id/99/200/300',
+        title: 'Simple project to learn how to make calls to a movie api and create a simple platform for movie rentals.',
+        //description: 'Simple project to learn how to make calls to a movie api and create a simple platform for movie rentals.',
+        imageUrl: '/images/projects/movie.png',
         tag: ['All', 'Web'],
-        gitUrl: '/',
-        previewUrl: '/'
-    },
-    {
-        id: 5,
-        title: 'Project 5',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://picsum.photos/id/12/200/300',
-        tag: ['All', 'Web'],
-        gitUrl: '/',
-        previewUrl: '/'
-    },
-    {
-        id: 6,
-        title: 'Project 6',
-        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quos.',
-        imageUrl: 'https://picsum.photos/id/3/200/300',
-        tag: ['All', 'Mobile'],
-        gitUrl: '/',
+        gitUrl: 'https://github.com/2020-JAUG/Front_rental_movie',
         previewUrl: '/'
     }
 ];
@@ -79,11 +60,11 @@ const ProjectsSection = () => {
 
     return (
         <section id='projects' style={{ paddingTop: '60px', marginTop: '-60px' }}>
-            <h2 className='text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12'>My Projects</h2>
+            <h2 className='text-center text-4xl font-bold text-white mt-8 mb-8 md:mb-12'>Repositories</h2>
             <div className='text-white flex flex-row justify-center items-center gap-2 py-6'>
-                <ProjectTag tag='All' onClick={() => handleTagClick('All')} isSelected={selectedTag === 'All'} />
-                <ProjectTag tag='Mobile' onClick={() => handleTagClick('Mobile')} isSelected={selectedTag === 'Mobile'} />
-                <ProjectTag tag='Web' onClick={() => handleTagClick('Web')} isSelected={selectedTag === 'Web'} />
+                {/*<ProjectTag tag='All' onClick={() => handleTagClick('All')} isSelected={selectedTag === 'All'} />*/}
+                {/*<ProjectTag tag='Mobile' onClick={() => handleTagClick('Mobile')} isSelected={selectedTag === 'Mobile'} />*/}
+                {/*<ProjectTag tag='Web' onClick={() => handleTagClick('Web')} isSelected={selectedTag === 'Web'} />*/}
             </div>
             <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
                 {filteredProjects.map((project) => (
