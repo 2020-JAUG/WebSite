@@ -4,6 +4,7 @@ import AboutSection from '../app/components/AboutSection';
 import ProjectsSection from '../app/components/ProjectsSection';
 import EmailSection from '../app/components/Emailsection';
 import Footer from '../app/components/Footer';
+import ScrollToTopButton from "@/app/components/ScrollToTopButton";
 
 export default function Home() {
 
@@ -17,6 +18,7 @@ export default function Home() {
                 <EmailSection/>
             </div>
             <Footer/>
+            <ScrollToTopButton/>
         </main>
     )
 }
