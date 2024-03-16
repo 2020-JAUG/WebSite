@@ -6,22 +6,6 @@ import { TabButton } from '@/app/components/TabButton'
 
 const TAB_DATA = [
     {
-        title: 'Skills',
-        id: 'skills',
-        content: (
-            <ul className='list-disc pl-2'>
-                <li>Docker</li>
-                <li>JavaScript</li>
-                <li>Laravel</li>
-                <li>MySQL</li>
-                <li>NodeJS</li>
-                <li>PHP</li>
-                <li>React</li>
-                <li>TypeORM</li>
-            </ul>
-        )
-    },
-    {
         title: 'Certifications',
         id: 'certifications',
         content: (
@@ -39,6 +23,22 @@ const TAB_DATA = [
             <ul className='list-disc pl-2'>
                 <li>Bootmcamp FullStack</li>
                 <li>DAW Misericordia</li>
+            </ul>
+        )
+    },
+    {
+        title: 'Skills',
+        id: 'skills',
+        content: (
+            <ul className='list-disc pl-2'>
+                <li>Docker</li>
+                <li>JavaScript</li>
+                <li>Laravel</li>
+                <li>MySQL</li>
+                <li>NodeJS</li>
+                <li>PHP</li>
+                <li>React</li>
+                <li>TypeORM</li>
             </ul>
         )
     }
@@ -68,10 +68,6 @@ const AboutSection = () => {
                         I have experience working with: Docker, HTML, JavaScript, Laravel, MySQL, NodeJS, PHP, React, TypeORM. I am a fast learner and always looking to expand my knowledge and skills.
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
-                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
-                            {" "}
-                            Skills{" "}
-                        </TabButton>
                         <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>
                             {" "}
                             Certifications{" "}
@@ -79,6 +75,10 @@ const AboutSection = () => {
                         <TabButton selectTab={() => handleTabChange('education')} active={tab === 'education'}>
                             {" "}
                             Education{" "}
+                        </TabButton>
+                        <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
+                            {" "}
+                            Skills{" "}
                         </TabButton>
                     </div>
                     <div className='mt-8'>{TAB_DATA.find((t) => t.id === tab).content}</div>
