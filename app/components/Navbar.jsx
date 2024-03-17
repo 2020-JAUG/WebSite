@@ -11,8 +11,8 @@ const navLinks = [
         path: '#about',
     },
     {
-        title: 'Projects',
-        path: '#projects',
+        title: 'Repositories',
+        path: '#repositories',
     },
     {
         title: 'Labs',
