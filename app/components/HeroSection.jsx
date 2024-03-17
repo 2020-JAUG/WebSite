@@ -12,7 +12,7 @@ const HeroSection = () => {
                 <div className='col-span-7 place-self-center text-center sm:text-left'>
                     <h1 className='mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal
                     font-extrabold'>
-                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-600'>
+                        <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-500'>
                             Hello, I'm{' '}
                         </span>
                         <br></br>
@@ -30,12 +30,11 @@ const HeroSection = () => {
                             />
                         </span>
                     </h1>
-                    <p className='text-base sm:text-lg mb-6 lg:text-xl [#adb7eb]
+                    <p className='text-base sm:text-lg mb-6 lg:text-xl text-white
                     '>
-                        I'm passionate about crafting innovative solutions to enhance user experience and tackle complex
-                        challenges. With a focus on web development and modern technologies, I strive to build scalable,
-                        high-performance applications. Committed to code quality and continuous learning, I stay updated
-                        in this dynamic field.
+                        I'm passionate about continuous improvement and exploring the wide range of possibilities to solve problems efficiently and effectively.
+                        I'm dedicated to creating scalable, as a backend developer. My commitment to code quality and continuous learning enables me
+                        to keep up to date in this constantly evolving field.
                     </p>
                     <div>
                         <Link href='/#contact' className='px-6 py-3 w-full sm:w-fit rounded-full mr-4
@@ -45,7 +44,7 @@ const HeroSection = () => {
                         '>
                             Hire Me
                         </Link>
-                        <Link href='/CV-AlejandroEng.pdf' download>
+                        <Link href='/CV-AlejandroEn.pdf' download>
                             <span className='px-1 py-1 inline-block  w-full sm:w-fit rounded-full text-white mt-3'>
                                 <span className='block bg-gradient-to-br from-primary-green-500
                                     to-secundary-blue-700 hover:from-green-500 hover:to-blue-700 active:from-green-500 active:to-blue-700 rounded-full px-5 py-2'>
