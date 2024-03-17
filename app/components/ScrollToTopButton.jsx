@@ -23,10 +23,10 @@ const ScrollToTopButton = () => {
     }, []);
 
     return (
-        <div className="scroll-to-top" style={{position: 'fixed', bottom: '20px', right: '14px'}}>
+        <div className="scroll-to-top" style={{position: 'fixed', bottom: '20px', right: '12px'}}>
             {isVisible &&
                 <div onClick={scrollToTop}>
-                    <button>Up</button>
+                        <button className='bg-gradient-to-br from-green-500 to-blue-700 text-white font-medium py-1.4 px-1 rounded-lg w-full'>&#8593;</button>
                 </div>}
         </div>
     );
