@@ -36,7 +36,7 @@ const projectsData = [
         id: 4,
         title: 'Simple project to learn how to make calls to a movie api and create a simple platform for movie rentals.',
         //description: 'Simple project to learn how to make calls to a movie api and create a simple platform for movie rentals.',
-        imageUrl: '/images/projects/movie.png',
+        imageUrl: '/images/projects/movie.webp',
         tag: ['All', 'Web'],
         gitUrl: 'https://github.com/2020-JAUG/Front_rental_movie',
         previewUrl: '/'
