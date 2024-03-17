@@ -33,7 +33,7 @@ const HeroSection = () => {
                     <p className='text-base sm:text-lg mb-6 lg:text-xl text-white
                     '>
                         I'm passionate about continuous improvement and exploring the wide range of possibilities to solve problems efficiently and effectively.
-                        I'm dedicated to creating scalable, as a backend developer. My commitment to code quality and continuous learning enables me
+                        I'm dedicated to creating scalable, as a Backend Developer. My commitment to code quality and continuous learning enables me
                         to keep up to date in this constantly evolving field.
                     </p>
                     <div>
