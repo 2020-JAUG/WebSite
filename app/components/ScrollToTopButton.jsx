@@ -23,7 +23,7 @@ const ScrollToTopButton = () => {
     }, []);
 
     return (
-        <div className="scroll-to-top" style={{position: 'fixed', bottom: '20px', right: '24px'}}>
+        <div className="scroll-to-top" style={{position: 'fixed', bottom: '20px', right: '20px'}}>
             {isVisible &&
                 <div onClick={scrollToTop}>
                     <button>Up</button>
