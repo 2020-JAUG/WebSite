@@ -22,11 +22,11 @@ const MainPage = () => {
                 <div className='flex flex-wrap justify-center'>
                     {categories.map((category, index) => (
                         <div key={index} className='m-2 my-4'>
-                            <div className='block bg-gradient-to-br from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 active:from-green-600 active:to-blue-700 text-white font-semibold rounded-full px-6 py-3 shadow-lg transition duration-300 ease-in-out transform hover:scale-105'>
-                                <Link href={`/labs/${category.toLowerCase()}`} >
+                            <Link href={`/labs/${category.toLowerCase()}`}>
+                                <div className='block bg-gradient-to-br from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 active:from-green-600 active:to-blue-700 text-white font-semibold rounded-full px-6 py-3 shadow-lg transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer'>
                                     {category}
-                                </Link>
-                            </div>
+                                </div>
+                            </Link>
                         </div>
                     ))}
                 </div>
