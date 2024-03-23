@@ -13,15 +13,15 @@ const HeroSection = () => {
                     <h1 className='mb-4 text-4xl sm:text-5xl lg:text-8xl lg:leading-normal
                     font-extrabold'>
                         <span className='text-transparent bg-clip-text bg-gradient-to-r from-green-300 to-blue-500'>
-                            Hello, I'm{' '}
+                            Hi, I work as{' '}
                         </span>
                         <br></br>
                         <span style={{whiteSpace: 'nowrap', maxWidth: '100%', minWidth: '10rem'}}>
                             <TypeAnimation
                                 sequence={[
-                                    'Alejandro',
+                                    'Backend',
                                     1000,
-                                    'Web Developer',
+                                    'Developer',
                                     1000
                                 ]}
                                 wrapper='span'
@@ -30,11 +30,12 @@ const HeroSection = () => {
                             />
                         </span>
                     </h1>
-                    <p className='text-base sm:text-lg mb-6 lg:text-xl text-white
-                    '>
-                        I'm passionate about continuous improvement and exploring the wide range of possibilities to solve problems efficiently and effectively.
-                        I'm dedicated to creating scalable, as a Backend Developer. My commitment to code quality and continuous learning enables me
-                        to keep up to date in this constantly evolving field.
+                    <p className='text-base sm:text-lg mb-6 lg:text-xl text-white'>
+                        I'm passionate about continuous improvement and exploring the wide range of possibilities to
+                        solve problems efficiently and effectively. I'm dedicated to creating scalable solutions as a <a
+                        href='https://refactoring.guru/design-patterns' target='_blank' className='text-green-500 underline'>Backend Developer</a>. My
+                        commitment to code quality and continuous learning enables me to keep up to date in this
+                        constantly evolving field.
                     </p>
                     <div>
                         <Link href='/#contact' className='px-6 py-3 w-full sm:w-fit rounded-full mr-4
