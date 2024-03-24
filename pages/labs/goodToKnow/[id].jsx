@@ -1,14 +1,15 @@
-// app/labs/mysql/[id].jsx
+// app/labs/goodToKnow/[id].jsx
 import { useRouter } from 'next/router';
-import { mysqlTopics } from '../mysql';
-import Navbar from '/app/components/Navbar';
-import Footer from '/app/components/Footer';
+import { goodToKnowTopics } from '../goodtoknow';
+import Navbar from '../../../app/components/Navbar';
+import Footer from '../../../app/components/Footer';
 import '/app/globals.css';
 
 const TopicPage = () => {
     const router = useRouter();
     const { id } = router.query;
-    const topicDescription = mysqlTopics[id]?.description;
+
+    const topicDescription = goodToKnowTopics[id]?.description;
 
     return (
         <div className='min-h-screen flex flex-col bg-[#121212] w-full'>

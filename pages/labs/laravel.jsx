@@ -36,7 +36,7 @@ const LaravelPage = () => {
                         {Object.keys(laravelTopics).map((topic, index) => (
                             <div key={index} className='m-2 my-4 sm:w-1/2 md:w-1/3 lg:w-1/4'>
                                 <div className='relative z-10 border border-green-500 text-center rounded-lg p-2 h-full cursor-pointer'>
-                                    <Link href={`/labs/laravel/${encodeURIComponent(topic)}`}>
+                                    <Link href={`/labs/laravel/${encodeURIComponent(topic.replace(/\s+/g, '-'))}`}>
                                         <div>
                                             <h2 className='font-bold text-lg md:text-xl lg:text-2xl mb-2 text-white'>{topic}</h2>
                                             <p className='text-gray-400 text-sm md:text-base lg:text-lg'>{laravelTopics[topic].description}</p>
