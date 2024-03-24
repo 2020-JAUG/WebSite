@@ -5,7 +5,7 @@ import Navbar from '/app/components/Navbar';
 import Footer from '/app/components/Footer';
 import '/app/globals.css';
 
-const categories = ['Docker', 'JavaScript', 'Laravel', 'MySQL', 'Node.js', 'PHP'];
+const categories = ['Docker', 'GoodToKnow', 'Laravel', 'MySQL'];
 
 const MainPage = () => {
     return (
