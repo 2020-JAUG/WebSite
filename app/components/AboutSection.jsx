@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React, { useTransition, useState } from 'react'
 import { TabButton } from '@/app/components/TabButton'
 
-
 const TAB_DATA = [
     {
         title: 'Certifications',
@@ -62,13 +61,18 @@ const AboutSection = () => {
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
                     <h2 className='text-4xl font-bold mb-4'>About Me</h2>
                     <p className='text-base lg:text-lg'>
-                        Hi there! this is Pancho and I'm Alejo. I've always felt a great curiosity about the digital world, which has led me to be self-taught and to acquire knowledge about programming.
-                        My background is a bit peculiar, as for more than 10 years I've been working in the hospitality industry. As you can imagine, it's a very demanding field where
-                        you work hard and learn every day, similar to what you experience in software development. I am currently working as a Backend Developer in Valencia.
-                        I have experience working with: Docker, HTML, JavaScript, Laravel, MySQL, NodeJS, PHP, React, TypeORM. I am a fast learner and always looking to expand my knowledge and skills.
+                        Hi there! this is Pancho and I'm Alejo. I've always felt a great curiosity about the digital
+                        world, which has led me to be self-taught and to acquire knowledge about programming.
+                        My background is a bit peculiar, as for more than 10 years I've been working in the hospitality
+                        industry. As you can imagine, it's a very demanding field where
+                        you work hard and learn every day, similar to what you experience in software development. I am
+                        currently working as a Backend Developer in Valencia.
+                        I have experience working with: Docker, HTML, JavaScript, Laravel, MySQL, NodeJS, PHP, React,
+                        TypeORM. I am a fast learner and always looking to expand my knowledge and skills.
                     </p>
                     <div className='flex flex-row justify-start mt-8'>
-                        <TabButton selectTab={() => handleTabChange('certifications')} active={tab === 'certifications'}>
+                        <TabButton selectTab={() => handleTabChange('certifications')}
+                                   active={tab === 'certifications'}>
                             {" "}
                             Certifications{" "}
                         </TabButton>
