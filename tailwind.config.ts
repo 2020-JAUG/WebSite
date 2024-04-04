@@ -12,11 +12,7 @@ const config: Config = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-      },
-      screens: {
-        'tablet': '900px',
-        'mobile-small': '228px'
-      },
+      }
     },
   },
   plugins: [],
