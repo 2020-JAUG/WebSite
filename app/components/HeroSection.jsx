@@ -51,8 +51,11 @@ const HeroSection = () => {
                             className='text-green-500 underline'>Backend Developer</a>. My commitment to code quality
                         and continuous learning enables me to keep up to date in this constantly evolving field.
                     </p>
-                    <div className="flex flex-col sm:flex-row items-center sm:items-start">
-                        <Link href='/#contact' className='px-6 py-3 rounded-full mr-4 bg-gradient-to-br from-green-500 to-blue-700 hover:bg-slate-200 text-white'>
+                    <div className="flex flex-row items-center gap-4 mt-4">
+                        <Link
+                            href='/#contact'
+                            className='px-6 py-3 rounded-full bg-gradient-to-br from-green-500 to-blue-700 hover:bg-slate-200 text-white'
+                        >
                             Hire Me
                         </Link>
                         <button
