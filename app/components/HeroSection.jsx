@@ -1,9 +1,25 @@
 'use client'
-import React from 'react';
+import React, { memo, useEffect, useState } from 'react';
 import Link from 'next/link';
 import { TypeAnimation } from 'react-type-animation';
 
+const OptimizedTypeAnimation = memo(() => {
+    return (
+        <TypeAnimation
+            sequence={['Backend', 900, 'Developer', 900]} // Más rápido para reducir el bloqueo
+            wrapper='span'
+            speed={70} // Incrementado para mejorar fluidez y reducir bloqueos
+            repeat={Infinity}
+        />
+    );
+});
+
 const HeroSection = () => {
+    const [isMounted, setIsMounted] = useState(false);
+
+    useEffect(() => {
+        setIsMounted(true);
+    }, []);
 
     const handleDownloadCV = async () => {
         const cvUrl = '/images/CV-AlejandroEn.pdf';
@@ -25,13 +41,7 @@ const HeroSection = () => {
                         </span>
                         <br />
                         <span className='whitespace-nowrap'>
-                            <TypeAnimation
-                                sequence={['Backend', 1000, 'Developer', 1000]}
-                                wrapper='span'
-                                speed={50}
-                                repeat={Infinity}
-                                loading="lazy"
-                            />
+                            {isMounted ? <OptimizedTypeAnimation /> : 'Developer'}
                         </span>
                     </h1>
                     <p className='text-base sm:text-lg mb-6 lg:text-xl text-white'>
@@ -53,20 +63,6 @@ const HeroSection = () => {
                         </button>
                     </div>
                 </div>
-
-                {/* Imagen */}
-                {/* <div className='col-span-5 place-self-center mt-2 lg:mt-0 flex justify-center'>
-                    <div className='w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative'>
-                        <Image
-                            src='/logo.png'
-                            alt='astro-luna'
-                            className='absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 rounded-full'
-                            width={200}
-                            height={200}
-                            loading='lazy'
-                        />
-                    </div>
-                </div> */}
             </div>
         </section>
     );
