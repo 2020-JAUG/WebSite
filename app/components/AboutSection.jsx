@@ -58,12 +58,13 @@ const AboutSection = () => {
         <section className='text-white pt-20 mt[-18]' id='about'>
             <div className='md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16'>
                 <Image
-                    src="https://res.cloudinary.com/dbvjy7vzp/image/upload/w_1200,q_80,f_auto/heros_ymigam.jpg"
-                    alt="Hero Image"
+                    src="https://res.cloudinary.com/dbvjy7vzp/image/upload/w_auto,q_auto,f_auto/heros_ymigam.jpg"
+                    alt="Photo of Alejandro Urbina, a backend developer based in Valencia"
                     width={1200}
                     height={600}
-                    layout="responsive"
-                    priority={true}
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 1200px"
+                    priority
+                    className="rounded-lg object-cover"
                 />
 
                 <div className='mt-4 md:mt-0 text-left flex flex-col h-full'>
